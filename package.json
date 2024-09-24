@@ -1,0 +1,17 @@
+{
+  "name": "Amazon Home Page",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/cli": "^8.39.0",
+    "@wdio/local-runner": "^8.39.0",
+    "@wdio/mocha-framework": "^8.39.0",
+    "@wdio/spec-reporter": "^8.39.0",
+    "wdio-chromedriver-service": "^8.1.1"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.js"
+  },
+  "dependencies": {
+    "node": "^20.15.0"
+  }
+}
