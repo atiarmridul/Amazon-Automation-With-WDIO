@@ -27,8 +27,6 @@ class HomePage {
   async searchKeyword(searchItem) {
     await this.searchBox.setValue(searchItem);
     await this.searchClick.click();
-    //checking the correct text is entered in the searchbox
-    await expect(browser).toHaveUrl(expect.stringContaining(searchItem));
   }
 }
 

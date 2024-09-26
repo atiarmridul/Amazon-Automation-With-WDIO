@@ -27,17 +27,19 @@ Clone the project
     git clone https://github.com/atiarmridul/SWAG_LAB_Basic_Playwright.git
 ```
 
-Install dependencies
+Install Dependencies
 
 ```bash {"id":"01J7TWY4RKEYT0E8W8P7Q1J3BH"}
     npm install
 ```
 
-Start the test
+Start the Test
 
 ```bash {"id":"01J7TWY4RKEYT0E8W8P99KNTTW"}
     npm run wdio
 ```
+
+Show Report
 
 ```bash {"id":"01J8HPHZ3YQ9BK5J12Y06DGZD7"}
     npm run show-report
@@ -48,6 +50,7 @@ Start the test
 - WebdriverIO
 - Node.js
 - Javascript
+- Allure Report
 
 ## Tools Used
 

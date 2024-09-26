@@ -12,6 +12,9 @@ describe("My application", () => {
 
   it("Search with Keyword (Test Case > 2)", async () => {
     await HomePage.searchKeyword("Games");
+    //checking the correct text is entered in the searchbox
+    await expect(browser).toHaveUrl(expect.stringContaining("Games"));
+
   });
 
   it("Close the browser window (Test Case > 3)", async () => {
