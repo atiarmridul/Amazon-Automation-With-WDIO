@@ -10,8 +10,8 @@ class HomePage {
   get selectDropDown() {
     return $('//*[@id="searchDropdownBox"]');
   }
-  get captchaLink(){
-    return $("//a[text()='Try different image']")
+  get captchaLink() {
+    return $("//a[text()='Try different image']");
   }
   //this function will be used if captcha is displayed only.
   async captcha() {
@@ -21,7 +21,6 @@ class HomePage {
   }
   async dropDrownCategory(dropDownItem) {
     await this.selectDropDown.selectByVisibleText(dropDownItem);
- 
   }
 
   async searchKeyword(searchItem) {

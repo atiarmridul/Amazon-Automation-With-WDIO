@@ -38,12 +38,17 @@ Start the Test
 ```bash {"id":"01J7TWY4RKEYT0E8W8P99KNTTW"}
     npm run wdio
 ```
-Show Report
 
 Show Report
 
 ```bash {"id":"01J8HPHZ3YQ9BK5J12Y06DGZD7"}
     npm run show-report
+```
+
+Start the Test and Show Report Togather
+
+```bash {"id":"01J8QM8E0GXJ7FE27PH2G3JNCE"}
+    npm run wdio-show-report
 ```
 
 ## Tech Stack

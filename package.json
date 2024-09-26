@@ -11,7 +11,8 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
-    "show-report": "allure generate --clean allure-results && allure open"
+    "show-report": "allure generate --clean allure-results && allure open",
+    "wdio-show-report": "wdio run ./wdio.conf.js allure generate --clean allure-results && allure open"
   },
   "dependencies": {
     "node": "^20.15.0"
