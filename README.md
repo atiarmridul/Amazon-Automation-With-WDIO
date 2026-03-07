@@ -1,66 +1,91 @@
-# Amazon.com flow demonstration with WebdriverIO
+# Amazon Automation With WebdriverIO
 
-This project is a part of the assignment with WebdriverIO. The primary task is to go to the homepage, change the category from the seach bar, input a keyword, and click search. Last an assertion was made to check the task.
+This repository contains a small WebdriverIO automation project that validates a basic Amazon homepage search flow on `https://www.amazon.com/`.
 
-## Website Under Test
+## What The Test Covers
 
-https://www.amazon.com/
+The current automated flow does the following:
 
-## Test Recording Video
-
-https://go.screenpal.com/watch/cZQZjHVSwvd
-
-## Test Flows
-
-- Go to the website.
-- If Captcha is shown, bypass it.
-- Change the category from the search bar on the homepage.
-- Input a keyword in the search bar
-- Click search Icon
-- Verify the correct keyword is searched.
-
-## Run Locally
-
-Clone the project
-
-```bash {"id":"01J7TWY4RKEYT0E8W8P4QQK3KR"}
-    git clone https://github.com/atiarmridul/SWAG_LAB_Basic_Playwright.git
-```
-
-Install Dependencies
-
-```bash {"id":"01J7TWY4RKEYT0E8W8P7Q1J3BH"}
-    npm install
-```
-
-Start the Test
-
-```bash {"id":"01J7TWY4RKEYT0E8W8P99KNTTW"}
-    npm run wdio
-```
-
-Show Report
-
-```bash {"id":"01J8HPHZ3YQ9BK5J12Y06DGZD7"}
-    npm run show-report
-```
-
-Start the Test and Show Report Togather
-
-```bash {"id":"01J8QM8E0GXJ7FE27PH2G3JNCE"}
-    npm run wdio-show-report
-```
+1. Open the Amazon homepage
+2. Attempt to bypass a captcha if a known fallback link appears
+3. Select a category from the homepage search dropdown
+4. Enter a keyword in the search box
+5. Submit the search
+6. Verify the searched keyword appears in the URL
 
 ## Tech Stack
 
 - WebdriverIO
+- Mocha
 - Node.js
-- Javascript
-- Allure Report
+- JavaScript
+- Allure Reporter
 
-## Tools Used
+## Project Structure
 
-- VS Code.
+```text
+.
+├── README.md
+├── package.json
+├── package-lock.json
+├── wdio.conf.js
+└── test
+    ├── pageobjects
+    │   └── home.page.js
+    └── specs
+        └── test.home.js
+```
 
+## Key Files
 
+- `wdio.conf.js`
+  Main WebdriverIO configuration, reporters, hooks, and browser capabilities
+- `test/pageobjects/home.page.js`
+  Amazon homepage selectors and reusable actions
+- `test/specs/test.home.js`
+  The current end-to-end scenario
 
+## Prerequisites
+
+- Node.js 20+
+- Google Chrome installed locally
+- npm
+
+## Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/atiarmridul/Amazon-Automation-With-WDIO.git
+cd Amazon-Automation-With-WDIO
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Run The Tests
+
+Execute the WebdriverIO suite:
+
+```bash
+npm run wdio
+```
+
+Generate and open the Allure report after the test run:
+
+```bash
+npm run show-report
+```
+
+## Notes
+
+- The suite currently targets Chrome.
+- The test scenario is implemented as one user journey split across multiple `it(...)` blocks.
+- Amazon may occasionally show captcha or anti-bot checks, which can affect test stability.
+
+## Documentation
+
+Additional project notes are available in [doc/knowledge.md](doc/knowledge.md).
