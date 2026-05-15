@@ -1,5 +1,10 @@
 # Amazon Automation With WebdriverIO
 
+![WebdriverIO](https://img.shields.io/badge/WebdriverIO-Automation-orange)
+![Mocha](https://img.shields.io/badge/Mocha-Test%20Framework-brown)
+![Allure](https://img.shields.io/badge/Allure-Reporting-green)
+![Node.js](https://img.shields.io/badge/Node.js-20+-blue)
+
 This repository contains a small WebdriverIO automation project that validates a basic Amazon homepage search flow on `https://www.amazon.com/`.
 
 ## What The Test Covers
@@ -79,6 +84,35 @@ Generate and open the Allure report after the test run:
 ```bash
 npm run show-report
 ```
+
+## Automation Architecture
+
+This project follows a basic Page Object Model structure for reusable automation design.
+
+### Framework Goals
+
+- Maintainable selectors
+- Reusable test actions
+- Stable browser automation
+- Reporting integration
+- Scalable automation learning
+
+## Planned Improvements
+
+- GitHub Actions CI integration
+- Cross-browser execution
+- Retry strategy implementation
+- Screenshot capture on failure
+- Environment configuration management
+- Parallel execution support
+
+## Reporting
+
+The framework currently supports:
+
+- Allure reporting
+- Execution result visualization
+- Automation debugging support
 
 ## Notes
 
