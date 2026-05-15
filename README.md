@@ -35,91 +35,23 @@ The current automated flow does the following:
 ├── package-lock.json
 ├── wdio.conf.js
 └── test
-    ├── pageobjects
-    │   └── home.page.js
-    └── specs
-        └── test.home.js
 ```
 
-## Key Files
+## Learning Outcomes
 
-- `wdio.conf.js`
-  Main WebdriverIO configuration, reporters, hooks, and browser capabilities
-- `test/pageobjects/home.page.js`
-  Amazon homepage selectors and reusable actions
-- `test/specs/test.home.js`
-  The current end-to-end scenario
+- Web UI automation using WebdriverIO
+- Page Object Model implementation
+- End-to-end automation flow design
+- Allure reporting integration
 
-## Prerequisites
+## Recommended Future Enhancements
 
-- Node.js 20+
-- Google Chrome installed locally
-- npm
-
-## Setup
-
-Clone the repository:
-
-```bash
-git clone https://github.com/atiarmridul/Amazon-Automation-With-WDIO.git
-cd Amazon-Automation-With-WDIO
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-## Run The Tests
-
-Execute the WebdriverIO suite:
-
-```bash
-npm run wdio
-```
-
-Generate and open the Allure report after the test run:
-
-```bash
-npm run show-report
-```
-
-## Automation Architecture
-
-This project follows a basic Page Object Model structure for reusable automation design.
-
-### Framework Goals
-
-- Maintainable selectors
-- Reusable test actions
-- Stable browser automation
-- Reporting integration
-- Scalable automation learning
-
-## Planned Improvements
-
-- GitHub Actions CI integration
-- Cross-browser execution
-- Retry strategy implementation
+- GitHub Actions workflow
+- Headless execution support
 - Screenshot capture on failure
-- Environment configuration management
-- Parallel execution support
+- Cross-browser execution
 
-## Reporting
+## Repository Information
 
-The framework currently supports:
-
-- Allure reporting
-- Execution result visualization
-- Automation debugging support
-
-## Notes
-
-- The suite currently targets Chrome.
-- The test scenario is implemented as one user journey split across multiple `it(...)` blocks.
-- Amazon may occasionally show captcha or anti-bot checks, which can affect test stability.
-
-## Documentation
-
-Additional project notes are available in [doc/knowledge.md](doc/knowledge.md).
+- Repository Owner: Atiar Mridul
+- GitHub Profile: https://github.com/atiarmridul
